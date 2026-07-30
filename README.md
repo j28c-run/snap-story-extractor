@@ -32,16 +32,16 @@ Frontend (Cliente)          Backend (Servidor)
 
 ### Backend
 
-#### [package.json](file:///C:/Users/Junior/Downloads/snap.scrap/package.json)
+#### `package.json`
 - Configuración del proyecto Node.js
 - Dependencias: `express`, `puppeteer`, `cors`
 
-#### [server.js](file:///C:/Users/Junior/Downloads/snap.scrap/server.js)
+#### `server.js`
 - Servidor Express en puerto 3000
 - Endpoint API: `POST /api/scrape`
 - Manejo de CORS para permitir peticiones del frontend
 
-#### [scraper.js](file:///C:/Users/Junior/Downloads/snap.scrap/scraper.js)
+#### `scraper.js`
 - Lógica de automatización con Puppeteer
 - Funciones principales:
   - `scrapeSnapchatStories(username)`: Función principal
@@ -51,20 +51,20 @@ Frontend (Cliente)          Backend (Servidor)
 
 ### Frontend
 
-#### [index.html](file:///C:/Users/Junior/Downloads/snap.scrap/index.html)
+#### `index.html`
 - Formulario de entrada para username
 - Botón "Extraer Imágenes"
 - Estados de carga con spinner animado
 - Tarjeta de resultados con estadísticas
 - Tarjeta de error para manejo de errores
 
-#### [script.js](file:///C:/Users/Junior/Downloads/snap.scrap/script.js)
+#### `script.js`
 - Manejo de formulario
 - Llamadas API al backend
 - Actualización de UI con resultados
 - Funcionalidad de copiar URLs al portapapeles
 
-#### [style.css](file:///C:/Users/Junior/Downloads/snap.scrap/style.css)
+#### `style.css`
 - Diseño moderno con gradientes de Snapchat
 - Modo oscuro con efectos glassmorphism
 - Animaciones suaves (fadeIn, pulse, spin)
@@ -75,7 +75,8 @@ Frontend (Cliente)          Backend (Servidor)
 ### 1. Instalar Dependencias
 
 ```bash
-cd C:/Users/Junior/Downloads/snap.scrap
+git clone https://github.com/j28c-run/snap-story-extractor.git
+cd snap-story-extractor
 npm install
 ```
 
