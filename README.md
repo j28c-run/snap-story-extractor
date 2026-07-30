@@ -4,7 +4,7 @@
 
 ## 📋 Resumen
 
-Se ha creado exitosamente un **scraper automático** que extrae URLs de imágenes de historias de Snapchat usando Puppeteer para automatizar el navegador.
+**scraper automático** que extrae URLs de imágenes de historias de Snapchat usando Puppeteer para automatizar el navegador.
 
 ## 🏗️ Arquitectura
 
@@ -196,6 +196,4 @@ const PORT = process.env.PORT || 3000;  // Cambiar 3000 por otro puerto
 | **Instalación** | Ninguna | npm install |
 | **Uso** | Copiar script a consola | Ingresar username en formulario |
 
-## 🎉 Conclusión
 
-El scraper automático replica exactamente el proceso manual que realizaste inicialmente, pero de forma completamente automatizada. Solo necesitas ingresar el username y el sistema hace todo el trabajo.
