@@ -1,0 +1,18 @@
+{
+  "name": "snapchat-story-scraper",
+  "version": "1.0.0",
+  "description": "Automated Snapchat story image URL extractor",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": ["snapchat", "scraper", "puppeteer", "automation"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "puppeteer": "^21.6.1",
+    "cors": "^2.8.5"
+  }
+}

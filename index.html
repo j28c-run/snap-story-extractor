@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snapchat Story Image Extractor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="40" height="40" rx="12" fill="url(#gradient)" />
+                    <path d="M20 10L25 15H22V25H18V15H15L20 10Z" fill="white" />
+                    <path d="M14 28H26V30H14V28Z" fill="white" />
+                    <defs>
+                        <linearGradient id="gradient" x1="0" y1="0" x2="40" y2="40">
+                            <stop offset="0%" stop-color="#FFFC00" />
+                            <stop offset="100%" stop-color="#FF0080" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <h1>Snap Story Extractor</h1>
+            </div>
+            <p class="subtitle">Extrae URLs de imágenes de historias de Snapchat automáticamente</p>
+        </div>
+
+        <div class="card">
+            <h2>🚀 Scraper Automático</h2>
+            <p class="description">Ingresa el username de Snapchat y obtén las URLs de las imágenes automáticamente</p>
+
+            <form id="scrapeForm" class="scrape-form">
+                <div class="input-group">
+                    <label for="username">Username de Snapchat</label>
+                    <input type="text" id="username" name="username" placeholder="jennychallita" required
+                        autocomplete="off">
+                </div>
+
+                <button type="submit" class="scrape-btn" id="scrapeBtn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    <span>Extraer Imágenes</span>
+                </button>
+            </form>
+
+            <div id="loadingState" class="loading-state" style="display: none;">
+                <div class="spinner"></div>
+                <p id="loadingText">Iniciando scraper...</p>
+            </div>
+        </div>
+
+        <div id="resultsCard" class="card results-card" style="display: none;">
+            <h2>📊 Resultados</h2>
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-label">Total Multimedia:</span>
+                    <span class="stat-value" id="totalCount">0</span>
+                </div>
+                <div class="stat-item success">
+                    <span class="stat-label">Imágenes:</span>
+                    <span class="stat-value" id="imageCount">0</span>
+                </div>
+                <div class="stat-item warning">
+                    <span class="stat-label">Videos:</span>
+                    <span class="stat-value" id="videoCount">0</span>
+                </div>
+            </div>
+
+            <div id="imageUrlsContainer"></div>
+        </div>
+
+        <div id="errorCard" class="card error-card" style="display: none;">
+            <h2>❌ Error</h2>
+            <p id="errorMessage"></p>
+        </div>
+
+        <div class="card info-card">
+            <h2>ℹ️ Información</h2>
+            <ul>
+                <li><strong>Funcionalidad:</strong> Scraper automático con Puppeteer que extrae URLs de imágenes</li>
+                <li><strong>Backend:</strong> Node.js + Express + Puppeteer</li>
+                <li><strong>Privacidad:</strong> El scraping se ejecuta en tu servidor local</li>
+                <li><strong>Requisitos:</strong> Node.js instalado y dependencias instaladas (npm install)</li>
+                <li><strong>Limitaciones:</strong> Solo funciona en perfiles públicos o accesibles</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
